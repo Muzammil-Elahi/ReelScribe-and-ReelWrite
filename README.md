@@ -120,13 +120,3 @@ We welcome contributions to improve ReelScribe & ReelWrite! To contribute:
 ## 📝 License
 
 This project is licensed under the MIT License.
-
----
-
-## 📬 Contact
-
-For questions, suggestions, or issues, feel free to reach out at [your-email@example.com].
-
----
-
-You can copy-paste this into your `README.md` file as is. Let me know if you’d like to add or adjust anything!
