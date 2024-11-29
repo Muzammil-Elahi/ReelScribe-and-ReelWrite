@@ -1,5 +1,4 @@
 import Input from './components/input'
-import Toggle from './components/toggle'
 
 export default function Home() {
 
@@ -14,9 +13,6 @@ export default function Home() {
           Ideal for creators, marketers, and influencers aiming for precision and creativity in their content.
         </p>
         <Input />
-      </div>
-      <div className="flex flex-col justify-start text-white p-4">
-        <Toggle enabledText="Google Doc" disabledText="Local" />
       </div>
     </main>
 

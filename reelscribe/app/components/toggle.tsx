@@ -1,17 +1,21 @@
 'use client'
-import React, { useState } from "react"
+import React from "react"
 
-const Toggle = ({ enabledText, disabledText }: { enabledText: string; disabledText: string }) => {
-    const [isToggled, setIsToggled] = useState(false)
+const Toggle = ({ 
+    enabledText, 
+    disabledText,
+    isToggled,
+    setIsToggled,
+ }: { enabledText: string; disabledText: string, isToggled: boolean, setIsToggled: (isToggled: boolean) => void }) => {
 
     const toggleSwitch = () => {
         setIsToggled(!isToggled)
     }
 
     return (
-        <div className="flex items-center justify-start text-white p-4">
+        <div className="flex items-center justify-start text-white pt-4">
             <span className="text-gray-400 text-sm sm:text-base">
-                Save to {isToggled ? enabledText : disabledText}
+               {isToggled ? enabledText : disabledText}
             </span>
             &nbsp;
             <div
