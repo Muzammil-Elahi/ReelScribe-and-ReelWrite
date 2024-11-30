@@ -1,122 +1,100 @@
-# ReelScribe & ReelWrite: AI-Powered IG Reel Transcript & Rewriting Tool
-
-## 📖 About the Project
-ReelScribe & ReelWrite is a tool built for content creators looking to unlock the full potential of Instagram Reels. By automating the process of transcribing and rewriting, ReelScribe & ReelWrite allows creators to effortlessly generate polished scripts for repurposing content, creating captions, or crafting new video ideas. 
-
-Using **Instaloader**, **Assembly AI**, and **ChatGPT**, this tool provides an end-to-end solution for transforming IG Reels into optimized, professional scripts, saved directly into Google Docs for easy editing and sharing.
+Here’s a rewritten version of the GitHub README for your project with improved clarity and structure:
 
 ---
 
-## ⚙️ How It Works
+# **ReelScribe & ReelWrite: AI-Powered IG Reels Transcript & Script Generator**
 
-1. **Input the URL of the IG Reel**:  
-   Paste the URL of the Instagram Reel into the application.
+## 📖 **About the Project**
+**ReelScribe & ReelWrite** is an AI-powered tool designed to streamline the workflow for Instagram (IG) content creators. This solution simplifies the process of repurposing Instagram Reels by automating:
+1. **Transcription**: Turning video/audio into accurate text.
+2. **Rewriting**: Creating polished, engaging scripts using advanced AI models like ChatGPT or Google Gemini.
+3. **Script-to-Video Creation**: Generating new AI videos using **Captions.ai**.
 
-2. **Download the Video**:  
-   The tool uses **Instaloader** to fetch and download the video from Instagram.
+With a focus on efficiency and creativity, this tool enables creators to effortlessly generate professional scripts for captions, repurposed content, and fresh video ideas, all in one seamless workflow.
 
-3. **Generate a Transcript**:  
-   The downloaded video is processed using **Assembly AI**, which generates an accurate transcript of the content.
+---
 
-4. **Rewrite the Transcript**:  
-   Using **ChatGPT**, the raw transcript is rephrased into an engaging, professionally written script following this predefined format:
-   - **Hook**
-   - **Describe the Problem**
-   - **Present the Solution**
-   - **Provide Examples or More Details**
+## ⚙️ **How It Works**
+
+1. **Input IG Reel URL**: Paste the link to the Instagram Reel into the application.
+2. **Video Download**: The tool downloads the video using **Instaloader**.
+3. **Transcription**: The video’s audio is converted into text via **Assembly AI**.
+4. **Script Rewriting**: AI rewrites the raw transcript into a polished, structured format:
+   - **Attention-Grabbing Hook**
+   - **Problem Statement**
+   - **Solution Presentation**
+   - **Detailed Examples**
    - **Call to Action**
-
-5. **Save the Script to Google Docs**:  
-   The rewritten script is automatically exported to Google Docs for easy access, collaboration, and future use.
-
----
-
-## 🎯 Use Case for Content Creators
-
-ReelScribe & ReelWrite is designed to streamline the content creation process, helping creators focus on creativity instead of getting bogged down in manual tasks. Here's how ReelScribe & ReelWrite can help:
-
-- **Repurpose Content**: Transform IG Reels into professionally written scripts for other platforms like blogs, YouTube videos, or newsletters.
-- **Generate Captions**: Quickly create engaging captions or hashtags based on the transcript.
-- **Create New Scripts**: Use the rewritten content as a base to generate new scripts for short-form videos or other formats.
-- **Save Time**: Eliminate the manual effort of transcription and rewriting, leaving more room for creative innovation.
+5. **AI Video Creation**: The new script is sent to **Captions.ai**, which generates a professional-looking AI video.
+6. **Output Delivery**: The tool returns both the rewritten script and the generated video to the user.
 
 ---
 
-## 🚀 Getting Started
+## 🎯 **Use Cases**
 
-### Prerequisites
-To run ReelScribe & ReelWrite, you’ll need:
-- Python 3.8 or above
-- API Keys for:
+**ReelScribe & ReelWrite** is built for Instagram creators, marketers, and influencers who want to:
+- **Repurpose Content**: Turn IG Reels into professional scripts for blogs, YouTube videos, newsletters, or TikTok.
+- **Generate Captions**: Effortlessly create engaging captions for social media posts.
+- **Draft New Ideas**: Use rewritten scripts as inspiration for new short-form videos or creative campaigns.
+- **Save Time**: Automate tedious transcription and rewriting tasks, leaving more time for creative work.
+
+---
+
+## 🚀 **Getting Started**
+
+### **Prerequisites**
+To run this project, ensure you have:
+- **Python 3.8 or later**
+- **API Keys** for:
   - [Assembly AI](https://www.assemblyai.com/)
   - [OpenAI (ChatGPT)](https://platform.openai.com/signup/)
-  - [Google API for Google Docs](https://console.cloud.google.com/)
-- Install dependencies using:
-  ```bash
-  pip install instaloader openai google-api-python-client assemblyai
-  ```
+  - [Google Gemini (optional)](https://cloud.google.com/ai/gemini)
+  - [Captions.ai](https://captions.ai/)
 
----
-
-## 📦 Installation
-
+### **Setup Instructions**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ReelScribe & ReelWrite.git
-   cd ReelScribe & ReelWrite
+   git clone https://github.com/yourusername/ReelScribe-ReelWrite.git
+   cd ReelScribe-ReelWrite
    ```
 
-2. Install required packages:
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Set up your `.env` file with the following information:
+3. Create a `.env` file with your API keys:
+   ```bash
+   ASSEMBLYAI_API_KEY=your_assembly_ai_key
+   OPENAI_API_KEY=your_openai_key
+   GEMINI_API_KEY=your_google_gemini_key
+   CAPTIONS_API_KEY=your_captions_ai_key
    ```
-   ASSEMBLYAI_API_KEY=your_assemblyai_api_key
-   OPENAI_API_KEY=your_openai_api_key
-   GOOGLE_API_KEY=your_google_api_key
-   ```
 
----
-
-## 🖥️ Usage
-
-1. Run the script:
+4. Run the application:
    ```bash
    python main.py
    ```
 
-2. Paste the Instagram Reel URL when prompted.
+---
 
-3. The script will:
-   - Download the video.
-   - Transcribe it using Assembly AI.
-   - Rewrite the transcript using ChatGPT.
-   - Save the rewritten transcript to Google Docs.
+## 🛠️ **Key Features**
 
-4. Open your Google Doc to review and edit the output.
+- **Video Download**: Fetches Instagram Reels using **Instaloader**.
+- **Accurate Transcription**: Converts video audio to text via **Assembly AI**.
+- **AI-Powered Rewriting**: Polishes transcripts into professional scripts using **ChatGPT** or **Google Gemini**.
+- **Video Creation**: Generates AI-powered videos from rewritten scripts via **Captions.ai**.
+- **End-to-End Workflow**: Saves the output script to Google Docs for collaboration and reuse.
 
 ---
 
-## 🛠️ Tools and Technologies
-
-- **Instaloader**: For downloading Instagram Reel videos.
-- **Assembly AI**: For generating video transcripts.
-- **OpenAI ChatGPT**: For rewriting the transcript into a professional script.
-- **Google Docs API**: For saving the final script directly to Google Docs.
-
----
-
-## 🤝 Contributing
-
-We welcome contributions to improve ReelScribe & ReelWrite! To contribute:
-- Fork the repository.
-- Make your changes.
-- Submit a pull request.
+## 🤝 **Contributing**
+We welcome contributions to improve **ReelScribe & ReelWrite**! To contribute:
+1. Fork the repository.
+2. Make your changes.
+3. Submit a pull request with a detailed description.
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License.
+## 📝 **License**
+This project is licensed under the MIT License. See `LICENSE` for details.
