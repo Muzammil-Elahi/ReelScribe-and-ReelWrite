@@ -1,12 +1,14 @@
 'use client'
 import React from "react"
 
-const Toggle = ({ 
-    enabledText, 
-    disabledText,
-    isToggled,
-    setIsToggled,
- }: { enabledText: string; disabledText: string, isToggled: boolean, setIsToggled: (isToggled: boolean) => void }) => {
+interface ToggleProps {
+    isToggled: boolean
+    setIsToggled: (value: boolean) => void
+    enabledText: string
+    disabledText: string
+}
+
+const Toggle = ({ isToggled, setIsToggled, enabledText, disabledText }: ToggleProps) => {
 
     const toggleSwitch = () => {
         setIsToggled(!isToggled)

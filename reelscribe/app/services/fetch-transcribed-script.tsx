@@ -1,16 +1,16 @@
 import axios from "axios"
-
 const fetchData = async (message: string) => {
     const payload = {
         url: message
     }
     try {
-        const response = await axios.post("https://be-reelscribe.vercel.app/api/get_transcript", payload, {
+        const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/get_transcript`, payload, {
             headers: {
                 'Content-Type': 'application/json',
             },
             timeout: 60000,
         })
+        // console.log("Response:", response.data);
         return response.data
     } catch (error: any) {
         if (error.response) {

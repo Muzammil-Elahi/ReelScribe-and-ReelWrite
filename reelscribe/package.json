@@ -9,9 +9,9 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "dependencies": {
+"dependencies": {
+    "@tailwindcss/forms": "^0.5.9",
     "axios": "^1.7.8",
-    "flask": "^0.2.10",
     "next": "15.0.3",
     "node": "^20.18.1",
     "react": "19.0.0-rc-66855b96-20241106",
