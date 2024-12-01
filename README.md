@@ -1,7 +1,3 @@
-Here’s a rewritten version of the GitHub README for your project with improved clarity and structure:
-
----
-
 # **ReelScribe & ReelWrite: AI-Powered IG Reels Transcript & Script Generator**
 
 ## 📖 **About the Project**
