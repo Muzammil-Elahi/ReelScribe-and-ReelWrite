@@ -7,7 +7,6 @@ import axios from "axios"
     }
     try {
         const response = await axios.post("/api/generate-video", payload)
-        console.log("generateVideo:", response.data)
         return response.data
     } catch (error: any) {
         if (error.response?.data?.error) {

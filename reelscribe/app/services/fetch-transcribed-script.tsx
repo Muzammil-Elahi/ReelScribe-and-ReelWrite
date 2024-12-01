@@ -11,7 +11,6 @@ const fetchData = async (message: string, model: string) => {
             },
             timeout: 60000,
         })
-        // console.log("Response:", response.data);
         return response.data
     } catch (error: any) {
         if (error.response) {

@@ -9,15 +9,12 @@ export async function POST(request: Request) {
     'Content-Type': 'application/json',
   }
   try {
-    // console.log('Request headers:', headers)
-    // console.log('Operation ID:', id)
     const response = await axios.post(
       `https://api.captions.ai/api/creator/poll`,
-      {}, // empty body
+      {}, 
       { headers }
     )
-    
-    console.log('Response:', response.data)
+
     return NextResponse.json(response.data)
   } catch (error: any) {
     if (error.response) {
