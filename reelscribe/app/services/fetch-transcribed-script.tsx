@@ -1,7 +1,8 @@
 import axios from "axios"
-const fetchData = async (message: string) => {
+const fetchData = async (message: string, model: string) => {
     const payload = {
-        url: message
+        url: message,
+        model,
     }
     try {
         const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/get_transcript`, payload, {

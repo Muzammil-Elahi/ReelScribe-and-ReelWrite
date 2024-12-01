@@ -54,7 +54,7 @@ const AIGenerator = () => {
             return
         }
         try {
-            const responseClient = await fetchData(cleanedUrl)
+            const responseClient = await fetchData(cleanedUrl, selectedModel)
             setTranscribedData(responseClient?.transcript)
             setRewrittenData(responseClient?.rewritten_transcript)
             if (isToggled) downloadAsTxt(responseClient?.transcript)
