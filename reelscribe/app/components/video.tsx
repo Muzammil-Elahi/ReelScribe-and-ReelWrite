@@ -44,7 +44,7 @@ const VideoComponent = ({videoId}: {videoId: string}) => {
       </div>
     )
   } else {
-    content = <Loading loadingText="Please wait up to 5 minutes while the AI generates your video—it will appear below shortly!" />
+    content = <Loading loadingText="Please wait 5 to 10 minutes while the AI generates your video—it will appear below shortly!" />
   }
 
   return <>{content}</>
